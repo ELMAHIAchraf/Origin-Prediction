@@ -23,26 +23,36 @@
         app:layout_constraintStart_toStartOf="parent">
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="75dp"
+        android:text="Your car is European"
+        android:textSize="28sp"
+        android:textColor="#515151"/>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="40dp"
         android:background="#FFFFFF">
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/precision"
             android:layout_width="320dp"
             android:layout_height="70dp"
             android:background="@drawable/border"
             android:layout_marginTop="15dp"
-            android:padding="20dp"
-            android:inputType="numberDecimal"/>
+            android:enabled="false"
+            android:padding="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            android:text="Mgp"
+            android:text="Precision"
             android:layout_marginLeft="20dp"
             />
     </RelativeLayout>
@@ -50,23 +60,24 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="290dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="40dp"
         android:background="#FFFFFF">
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/recall"
             android:layout_width="320dp"
             android:layout_height="70dp"
             android:background="@drawable/border"
             android:layout_marginTop="15dp"
-            android:padding="20dp"
-            android:inputType="numberDecimal"/>
+            android:enabled="false"
+
+            android:padding="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            android:text="Displacement"
+            android:text="Recall"
             android:layout_marginLeft="20dp"
             />
     </RelativeLayout>
@@ -74,23 +85,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="380dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginLeft="40dp"
         android:background="#FFFFFF">
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/fScore"
             android:layout_width="320dp"
             android:layout_height="70dp"
             android:background="@drawable/border"
             android:layout_marginTop="15dp"
-            android:padding="20dp"
-            android:inputType="numberDecimal"/>
+            android:enabled="false"
+            android:padding="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            android:text="Acceleration"
+            android:text="F-score"
             android:layout_marginLeft="20dp"
             />
     </RelativeLayout>
@@ -98,62 +109,25 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="470dp"
-        android:layout_marginLeft="36dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="40dp"
         android:background="#FFFFFF">
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/accuracy"
             android:layout_width="320dp"
             android:layout_height="70dp"
             android:background="@drawable/border"
             android:layout_marginTop="15dp"
-            android:padding="20dp"
-            android:inputType="numberDecimal"/>
+            android:enabled="false"
+            android:padding="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            android:text="Weight"
+            android:text="Accuracy"
             android:layout_marginLeft="20dp"
             />
     </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="560dp"
-        android:layout_marginLeft="36dp"
-        android:background="#FFFFFF">
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="320dp"
-            android:layout_height="70dp"
-            android:background="@drawable/border"
-            android:layout_marginTop="15dp"
-            android:padding="20dp"
-            android:inputType="numberDecimal"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
-            android:text="Horsepower"
-            android:layout_marginLeft="20dp"
-            />
-    </RelativeLayout>
-
-    <Button
-        android:id="@+id/Button"
-        android:layout_width="320dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="660dp"
-        android:layout_marginLeft="36dp"
-        android:background="@drawable/background"
-        android:text="Choose ML algorithm"
-        app:backgroundTint="@null"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
