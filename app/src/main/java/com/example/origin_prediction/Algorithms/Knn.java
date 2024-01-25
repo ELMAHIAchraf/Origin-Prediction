@@ -1,10 +1,12 @@
-package com.example.origin_prediction;
+package com.example.origin_prediction.Algorithms;
+
+import com.example.origin_prediction.Pojo.Car;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Knn {
-    public static String calc(List<Car> cars, Car carToPred, int k) {
+    public static String predict(List<Car> cars, Car carToPred, int k) {
 
         int japanese=0,american=0,european=0;
 

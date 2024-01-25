@@ -1,7 +1,9 @@
-package com.example.origin_prediction;
+package com.example.origin_prediction.Algorithms;
+
+import com.example.origin_prediction.Pojo.Car;
 
 public class DT {
-    public static String calc(Car car){
+    public static String predict(Car car){
         String origin;
         if(car.getWeight()<=1812.5){
             if(car.getDisplacement()<=94.5){
