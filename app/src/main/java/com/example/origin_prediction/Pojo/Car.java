@@ -1,12 +1,17 @@
 package com.example.origin_prediction.Pojo;
 
+import android.content.Context;
+
+import com.example.origin_prediction.R;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.InputStreamReader;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Car implements Serializable {
+public class Car implements Serializable{
     private double mgp;
     private double displacement;
     private double horsePower;
@@ -43,10 +48,10 @@ public class Car implements Serializable {
         this.result = result;
     }
 
-    public static List<Car> getCars(){
+    public static List<Car> getCars(Context context){
         List<Car> cars = new ArrayList<>();
         try{
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\elmah\\AndroidStudioProjects\\OriginPrediction\\app\\src\\main\\res\\raw\\data.csv"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(context.getResources().openRawResource(R.raw.data)));
             String row = "";
 
             while((row=reader.readLine())!=null){

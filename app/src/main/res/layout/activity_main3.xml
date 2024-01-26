@@ -29,7 +29,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="230dp"
         android:layout_marginLeft="75dp"
-        android:text="Your car is European"
+        android:text=""
         android:textSize="28sp"
         android:textColor="#515151"/>
 
