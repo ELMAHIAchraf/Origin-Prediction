@@ -76,7 +76,7 @@ public class MainActivity2 extends AppCompatActivity {
                             int k = Integer.parseInt(editText.getText().toString());
                             origin = Knn.predict(cars, car, k);
                         }catch (NumberFormatException e){
-                            Toast.makeText(getApplicationContext(), "Please enter valid numbers in all fields", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Please enter a valid number in the field", Toast.LENGTH_SHORT).show();
                             return;
                         }
                     } else if (selectedRadio==R.id.bayes) {
